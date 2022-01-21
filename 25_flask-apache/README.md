@@ -134,7 +134,7 @@ There are three important new things to account for as your app gets larger...
 	sys.path.append("/var/www/FlaskApp/FlaskApp")
 	```
 
-3. Third (And finally)! Change the permissions on the database file so that apache can definitely access it.
+3. Third (And usually finally)! Change the permissions on the database file so that apache can definitely access it.
 	* Change the owner of the db file to apache
 	```
 	sudo chown www-data:www-data db_file.db
@@ -154,11 +154,12 @@ There are three important new things to account for as your app gets larger...
 	```
 	sudo service apache2 restart
 	```
+4. You might also have to change the paths of any additional files you reference that are not being imported, such as API keys, images, etc to have all forward slashes (/). Also, you might want to change them to absolute paths using by appending `/var/www/<appname>/<appname>/` to the beginning.
+
 If it still doesn't work, run the following to see what the other errors are 
 ```
 sudo cat /var/log/apache2/error.log
 ```
-
 
 ## Other
 
