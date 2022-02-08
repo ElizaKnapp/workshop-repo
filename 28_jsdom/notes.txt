@@ -1,0 +1,10 @@
+General observations:
+* the specific explanations are in the comments
+
+- when you type in the function (or the variable) name, it gives you
+the code that defines that function or variable
+
+Questions
+- how do you remove ALL other css tags on a specific thing without knowing exactly what their names are
+- what happens when you have "nested" elements? do you just keep appending .getElementByTagName or 
+does the first .getElementByTagName find inner elements inside other elements?
