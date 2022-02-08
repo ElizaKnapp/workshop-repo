@@ -32,6 +32,7 @@ var i = "hello";
 var j = 20;
 
 
+
 //assign an anonymous fxn to a var
 var f = function(x) { // if you go in the console and type f(number) it will return 30 + val
   var j=30;
@@ -42,13 +43,13 @@ var f = function(x) { // if you go in the console and type f(number) it will ret
 //instantiate an object
 // if you just type in o to the console, then you get this info below
 var o = { 'name' : 'Thluffy',
-          age : 15,
-          items : [10, 20, 30, 40],
-          morestuff : {a : 1, b : 'ayo'},
-          func : function(x) {
-            return x+30;
-          }
-        };
+age : 15,
+items : [10, 20, 30, 40],
+morestuff : {a : 1, b : 'ayo'},
+func : function(x) {
+  return x+30;
+}
+};
 
 
 // type in addItem("text") and it does
@@ -101,14 +102,15 @@ var stripe = function() {
 // GCD
 
 var fib = function(n){
+  console.log("here!");
   if(n < 0){
-      return "Invalid Input";
+    return "Invalid Input";
   } else if(n == 0){
-      return 0;
+    return 0;
   } else if(n == 1){
-      return 1;
+    return 1;
   } else{
-      return fib(n-1) + fib(n-2);
+    return fib(n-1) + fib(n-2);
   }
 }
 
@@ -124,10 +126,7 @@ var fac = function(n) {
 
 var gcd = function(a, b) {
   r = a % b;
-  while (r > 0) {
-    a = b;
-    b = r;
-    r = a % b;
-  }
-  return b;
+  if(r == 0) return b;
+  return gcd(b, a % b);
 }
+
