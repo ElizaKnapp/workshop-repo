@@ -102,7 +102,6 @@ var stripe = function() {
 // GCD
 
 var fib = function(n){
-  console.log("here!");
   if(n < 0){
     return "Invalid Input";
   } else if(n == 0){
@@ -129,4 +128,3 @@ var gcd = function(a, b) {
   if(r == 0) return b;
   return gcd(b, a % b);
 }
-

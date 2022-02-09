@@ -20,6 +20,8 @@
     </style>
   </head>
 
+  <script src="dommy_consolery.js"></script>
+
   <body>
     <h1 id="h" class="blue">Hello World!</h1>
 
@@ -39,11 +41,21 @@
     </ol>
 
     <ul id="function_list">
-      <li class="fib"> Fib </li>
+      <h3>Here are the relevant functions!</h3>
+      <li> Fib (testing fib 4 below) <br>
+        <script>document.write(fib(4))</script>
+      </li>
+      <li> Fac (testing 5! below) <br>
+        <script>document.write(fac(5))</script>
+      </li>
+      <li> GCD (testing 10, 12 AND 12, 10) <br> 
+        <script>document.write(gcd(10, 12))</script> <br>
+        <script>document.write(gcd(12, 10))</script> <br>
+        Hopefully those two numbers are the same!
+      </li>
 
     </ul>
 
-    <script src="dommy_consolery.js"></script>
 
   </body>
 </html>

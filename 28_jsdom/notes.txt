@@ -1,10 +1,17 @@
-General observations:
+General observations: 
 * the specific explanations are in the comments
 
 - when you type in the function (or the variable) name, it gives you
 the code that defines that function or variable
+- for automatic running of stuff when the page renders
+  1. put the script function at the top so that it has access to all the functions like it's importing them
+  2. you can use document.write(function_name(params))
 
-Questions
+Questions:
 - how do you remove ALL other css tags on a specific thing without knowing exactly what their names are
 - what happens when you have "nested" elements? do you just keep appending .getElementByTagName or 
 does the first .getElementByTagName find inner elements inside other elements?
+- can you use the document.write / dom stuff in flask? or do you have to make
+a variable to conditionally render parts of the html that call the js that using 
+document.write?
+
