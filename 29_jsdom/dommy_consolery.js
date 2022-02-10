@@ -18,10 +18,10 @@
    (delete this block comment once you are done)
 */
 
-// Eliza Knapp
+// BSGE :: Kevin Cao, Eliza Knapp
 // SoftDev pd0
-// K28 -- Getting more comfortable with the dev console and the DOM
-// 2022-02-08t
+// K29 -- DOMfoolery++
+// 2022-02-10t
 // --------------------------------------------------
 
 //send diagnostic output to console
@@ -160,6 +160,15 @@ gcd_html(18, 12);
 
 /*_____________________________ */
 
+// add text to end of list
+var addItem = function (text) {
+  var list = document.getElementById("thelist");
+  var newitem = document.createElement("li");
+  newitem.innerHTML = text;
+  list.appendChild(newitem);
+};
+/*_____________________________ */
+
 var data = document.getElementById("fib_button");
 data.addEventListener("click", handle_fib_click);
 
@@ -171,8 +180,8 @@ function handle_fib_click() {
 
 /*_____________________________ */
 
-var data = document.getElementById("fac_button");
-data.addEventListener("click", handle_fac_click);
+var data1 = document.getElementById("fac_button");
+data1.addEventListener("click", handle_fac_click);
 
 function handle_fac_click() {
   var num = document.getElementById("fac_button_input").value;
@@ -183,6 +192,19 @@ function handle_fac_click() {
 }
 
 /*_____________________________ */
+
+var data2 = document.getElementById("gcd_button");
+data2.addEventListener("click", gcd_click);
+
+function gcd_click() {
+  let x = prompt("Enter the first number");
+  let y = prompt("Enter the second number");
+  var ret = gcd(x, y);
+  addItem("The greatest common denominator of " + x + " and " + y + " is " + ret);
+  var info1 = document.getElementById("gcd_text");
+  info1.innerHTML = `The answer has been added to the list! It is: ${ret}`;
+}
+
 
 
 
