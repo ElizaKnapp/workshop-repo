@@ -1,0 +1,19 @@
+Something crazy
+- it works ONLY when I put the script at the end of the file?
+- so i have added a script call twice?
+
+Also:
+- a better way (oopsies!) to call js right onto the page is just to call your functions
+outside of the functions in the js file and they run automatically as you execute the script
+
+you can use .value to get the value of an input from a specific element
+
+to clear inputs after submitting, you can reset their values to null [not an empty string because I specified the type as an int]
+
+document.createElement(<html tag name></html>)
+element.setAttribute(name, value)
+element.getAttribute(name)
+element.remove()
+element.innerHTML
+element.appendChild(<element>)
+element.addEventListener("event", "function")
