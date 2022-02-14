@@ -1,0 +1,10 @@
+document.getElementById("slate")
+
+var ctx = c.getContext("2d")
+- represents a 2 dimensional rendering object
+
+now you can use ctx. [insert tons of drawing functions here]
+for example:
+
+.clearRect(0, 0, canvas.width, canvas.height)
+
