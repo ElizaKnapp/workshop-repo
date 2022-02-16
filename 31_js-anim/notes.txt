@@ -1,0 +1,4 @@
+request animation frame and cancel animation frame
+
+draw the name is the address for when the defintion lives while
+draw() is draw with the parameters
