@@ -76,6 +76,8 @@ var moveDVD = () => {
     if (stopped) {
       x = Math.floor(Math.random() * (500-DVD.width));
       y = Math.floor(Math.random() * (500-DVD.height));
+      dx = 5 * Math.cos(Math.PI/4);
+      dy = 5 * Math.sin(Math.PI/4);
       stopped = false;
     }
 
