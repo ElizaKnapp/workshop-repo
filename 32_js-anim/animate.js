@@ -54,10 +54,12 @@ var drawDot = () => {
     ctx.fill();
 };
 
+var stopped = false;
 
 var stopIt = () => {
     console.log("stopIt invoked...")
     console.log(requestID);
+    stopped = true;
 
     window.cancelAnimationFrame(requestID);
 };
@@ -71,6 +73,11 @@ var dx = 5 * Math.cos(Math.PI/4);
 var dy = 5 * Math.sin(Math.PI/4);
 
 var moveDVD = () => {
+    if (stopped) {
+      x = Math.floor(Math.random() * (500-DVD.width));
+      y = Math.floor(Math.random() * (500-DVD.height));
+      stopped = false;
+    }
 
     console.log("moveDVD invoked...");
     
