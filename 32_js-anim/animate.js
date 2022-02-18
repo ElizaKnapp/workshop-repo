@@ -1,4 +1,4 @@
-// Andrew Juang and Eliza Knapp
+// Komodo Hedgehogs- Andrew Juang and Eliza Knapp
 // Softdev pd2
 // k32 -- More Moving Parts
 // 2022-02-17m

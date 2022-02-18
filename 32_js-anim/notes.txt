@@ -1,4 +1,11 @@
-Andrew Juang and Eliza Knapp
+Komodo Hedgehogs- Andrew Juang and Eliza Knapp
 Softdev pd2
 k32 -- More Moving Parts
 2022-02-17m
+
+- Can just call Math library without importing anything
+- Call Image constructor to create an image 
+    - Can access properties of the object with a "." (IMG.width)
+- ctx.drawImage() to draw the image on the canvas
+- Separated the x and y velocities so it bounces off the wall
+- Created a stopped boolean so that it moves to a random location everytime you start/stop it
