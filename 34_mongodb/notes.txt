@@ -1,0 +1,10 @@
+Notes on Data Modeling with MongoDB
+- you can dictate how the data is modeled
+- change your data modeling- iterative design
+- linking with different relationships
+	- you can embed stuff when it's 1 to 1 or 1 to many
+	- many to many relationships can contain arrays with the unique ids of the other linked thing
+- you can have versions of scheme (one without email and one with)
+- you decide which one you want to use
+- at some point though, you have to sync them
+- Bucket pattern- you can put small, related data items inside a specific elemtn- Computed pattern- precompute important numbers- update summary numbers when you push to db
